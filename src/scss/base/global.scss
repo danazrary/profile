@@ -1,0 +1,47 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400
+
+.playwrite-ng-modern-font {
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: $extra_Medium_Screen) {
+    font-size: 50%;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: inline-block;
+  position: relative;
+
+  line-height: 1.7;
+
+  font-size: 1.6rem;
+  font-family: "Playwrite NG Modern", cursive;
+  box-sizing: border-box;
+  font-weight: 400;
+  @media only screen and (max-width: $extra_Small_Screen) {
+    width: 100%;
+  }
+}
+@keyframes gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+main {
+  z-index: 100;
+}

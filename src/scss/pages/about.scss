@@ -1,0 +1,141 @@
+.about {
+  width: 100vw;
+  height: 99vh;
+  background-color: #ffffff;
+
+  padding: 3rem;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  margin-top: -20rem;
+  position: relative;
+  @media only screen and (max-width: $extra_Small_Screen) {
+    width: 100vw;
+    padding: 1rem;
+    height: 130vh;
+  }
+
+  @media only screen and (max-width: $extra_Extra_Small_Screen) {
+    padding: 0.5rem;
+    height: 160vh;
+  }
+
+  &__div {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    grid-template-rows: 50% 10% 40%;
+    gap: 1rem;
+    @media only screen and (max-width: $huge_Screen) {
+      width: 90%;
+    }
+    @media only screen and (max-height: $extra_Large_Screen) {
+      height: 70%;
+      grid-template-rows: 50% 25% 30%;
+    }
+
+    @media only screen and (max-height: $extra_Extra_medium_ScreenH) {
+      grid-template-rows: 70% 15% 15%;
+    }
+    @media only screen and (max-height: $extra_Extra_medium_ScreenH) {
+      width: 70%;
+      height: 70%;
+      grid-template-rows: 50% 20% 30%;
+    }
+
+    &--img {
+      margin-top: 6rem;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+
+      @media only screen and (max-width: $large_Screen) {
+        display: none;
+      }
+    }
+
+    &--text {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      @media only screen and (max-width: $large_Screen) {
+        grid-column: 1/3;
+      }
+
+      &-h2 {
+        font-size: 4rem;
+        @media only screen and (max-height: $extra_Extra_medium_ScreenH) {
+          font-size: 3rem;
+        }
+      }
+
+      &-p {
+        display: inline-block;
+        padding: 1rem;
+        font-family: "Aleo", serif;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        @media only screen and (max-height: $extra_Extra_medium_ScreenH) {
+          font-size: 2rem;
+        }
+
+        &:hover {
+          backdrop-filter: blur(5px) brightness(0.5);
+          color: #551a8b;
+          border-radius: 1rem;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem;
+        }
+      }
+    }
+
+    &--skills {
+      grid-column: 1/3;
+      grid-row: 3/4;
+
+      &-h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      &-ul {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 2.4rem;
+        font-family: "Aleo", serif;
+
+        @media only screen and (max-width: $large_Screen) {
+          width: 100%;
+          flex-wrap: wrap;
+        }
+
+        &-li {
+          margin: 0.5rem;
+          text-align: center;
+          width: 15rem;
+          background-color: #808080;
+          padding: 1rem;
+          border-radius: 1rem;
+
+          color: #000000;
+        }
+      }
+    }
+  }
+}

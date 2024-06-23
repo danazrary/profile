@@ -1,0 +1,25 @@
+// main.scss
+
+// Base styles
+
+@import "base/variables";
+@import "base/global";
+
+// Components
+
+// Layouts
+@import "layouts/header";
+
+// Pages
+@import "pages/home";
+@import "pages/about";
+@import "pages/projects";
+@import "pages/contact";
+
+// Themes
+@import "themes/dark";
+@import "themes/light";
+
+// Utilities
+@import "utilities/helpers.scss";
+@import "utilities/animation";
